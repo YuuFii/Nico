@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Nico Arya Divano</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;700;900&family=Bree+Serif&display=swap" rel="stylesheet"> 
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        lightBlue1: '#76B7D0',
+                        lightBlue2: '#5F95AA',
+                        yellow1: '#FFE052'
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <nav class="flex justify-around items-center w-full flex-wrap">
+        <a href="index.html" class="text-lightBlue1 text-4xl py-3 font-semibold tracking-wide">Nico.</a>
+        <div id="burgerBtn" class="text-3xl md:hidden text-white">
+            <i class="ph ph-list"></i>
+        </div>
+        <div id="burgerXBtn" class="hidden text-white text-3xl">
+            <i class="ph ph-x"></i>
+        </div>
+        <ul id="nav-list" aria-expanded="false" class="hidden nav-list md:flex flex-col md:flex-row md:gap-5 text-center bg-lightBlue1 md:bg-[#1D3E53] text-white tracking-wide w-full md:w-auto">
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="index.html">Portofolio</a>
+            </li>
+            <li>
+                <a href="index.html">Experiences</a>
+            </li>
+            <li>
+                <a href="index.html">About Me</a>
+            </li>
+            <li>
+                <a href="#contact" class="btn">Contact</a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <div class="flex flex-col md:flex-row items-center text-center md:text-start my-20 mx-9 lg:mx-24">
+            <div class="md:hidden">
+                <h3 class="text-[18px] font-semibold text-lightBlue2 tracking-wide">My name is</h3>
+                <h1 class="nama text-[40px] text-yellow1 tracking-wider">NICO ARYA<br>DIVANO.</h1>
+            </div>
+            <div class="order-1 md:order-none lg:flex-1">
+                <h3 class="hidden md:block text-[18px] md:text-[22px] xl:text-[25px] font-semibold text-lightBlue2 tracking-wide">My name is</h3>
+                <h1 class="nama hidden md:block text-[40px] md:text-[60px] xl:text-[80px] text-yellow1 tracking-wider">NICO ARYA<br>DIVANO.</h1>
+                <p class="text-white text-[13px md:text-[17px] xl:text-[20px] tracking-wide md:w-9/12 mx-10 sm:mx-20 md:mx-0">I am an Informatics Engineering student who is passionate about developing experience in the web developer field.</p>
+            </div>
+            <img src="assets/photo1701614784.jpeg" alt="" class="foto my-5">
+        </div>
+        
+        <div class="portofolio">
+            <h2 class="sub-title uppercase font-semibold text-yellow1 text-center md:text-xl mb-10 tracking-wider">Portofolio</h2>
+            <div class="project-item flex flex-col sm:flex-row sm:items-center sm:justify-between sm:gap-5 m-10 lg:mx-24">
+                <div class="project-explanation order-1 sm:order-none text-white mt-3">
+                    <h2 class="font-light text-[20px] tracking-wider">PROJECT 1</h2>
+                    <h3 class="font-semibold tracking-wide text-[#77ABB7]">Career Exploration Website</h3>
+                    <p class="text-[13px] mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit quae fuga eaque unde iste fugit.</p>
+                    <a href="#" class="read-more text-yellow1 text-[13px] underline">
+                        Read more
+                    </a>
+                </div>
+                <img class="rounded-lg sm:w-2/4" src="assets/online-web-design.jpg" alt="">
+            </div>
+            <div class="project-item flex flex-col sm:flex-row sm:items-center sm:justify-between sm:gap-5 m-10 lg:mx-24">
+                <div class="project-explanation order-1 text-white mt-3 sm:text-end">
+                    <h2 class="font-light text-[20px] tracking-wider">PROJECT 2</h2>
+                    <h3 class="font-semibold tracking-wide text-[#77ABB7]">Career Exploration Website</h3>
+                    <p class="text-[13px] mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit quae fuga eaque unde iste fugit.</p>
+                    <a href="#" class="read-more text-yellow1 text-[13px] underline">
+                        Read more
+                    </a>
+                </div>
+                <img class="rounded-lg sm:w-2/4" src="assets/online-web-design.jpg" alt="">
+            </div>
+            
+            <div class="flex justify-center text-white">
+                <button class="btn view-all">View all</button>
+            </div>
+        </div>
+
+        <div class="experience">
+            <h2 class="sub-title uppercase font-semibold text-yellow1 md:text-xl text-center mt-20 mb-10 tracking-wider">Experiences</h2>
+            <ul class="experience-lists grid grid-cols-2 sm:flex sm:justify-evenly gap-y-10">
+                <li>
+                    <img src="assets/3.svg" alt="">
+                    <p>HTML</p>
+                </li>
+                <li>
+                    <img src="assets/4.svg" alt="">
+                    <p>CSS</p>
+                </li>
+                <li>
+                    <img src="assets/2.svg" alt="">
+                    <p>Python</p>
+                </li>
+                <li>
+                    <img src="assets/1.svg" alt="">
+                    <p>Java</p>
+                </li>
+            </ul>
+        </div>
+    </main>
+    <footer id="contact" class="mt-20 p-10">
+        <h2 class="sub-title uppercase font-semibold text-center md:text-xl mb-10 tracking-wider">contact me</h2>
+        <div class="footer-content md:flex md:justify-between">
+            <div class="text-footer">
+                <h3 class="font-semibold tracking-wider md:text-[18px]">Drop me a message</h3>
+                <p class="tracking-wide text-[14px] md:text-base">Interested in collaborating or have questions? <br>Drop me a message or a question.</p>
+                <ul class="list-footer space-y-9 my-9 text-[14px] md:text-base">
+                    <li>
+                        <i class="ph ph-phone logo-footer"></i>
+                        <span>+62 896-7944-8988</span>
+                    </li>
+                    <li>
+                        <i class="ph ph-envelope logo-footer"></i>
+                        <span>ncarya24@gmail.com</span>
+                    </li>
+                    <li>
+                        <i class="ph ph-map-pin logo-footer"></i>
+                        <span>Batu, East Java, Indonesia</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="form-footer">
+                <form class="form-message" action="https://formspree.io/f/myyrylzd" method="POST">
+                    <input type="text" name="name" id="name" placeholder="Name" autocomplete="off">
+                    <input type="email" name="email" id="email" placeholder="Email" autocomplete="off">
+                    <textarea type="text" name="message" id="message" rows="7" placeholder="Message"></textarea>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+        </div>
+        <ul class="social-media flex justify-end gap-5 my-5">
+            <li>
+                <a href="https://www.tiktok.com/@nicoaryaa?_t=8imX2d0Ooio&_r=1" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M16.6 5.82s.51.5 0 0A4.278 4.278 0 0 1 15.54 3h-3.09v12.4a2.592 2.592 0 0 1-2.59 2.5c-1.42 0-2.6-1.16-2.6-2.6c0-1.72 1.66-3.01 3.37-2.48V9.66c-3.45-.46-6.47 2.22-6.47 5.64c0 3.33 2.76 5.7 5.69 5.7c3.14 0 5.69-2.55 5.69-5.7V9.01a7.35 7.35 0 0 0 4.3 1.38V7.3s-1.88.09-3.24-1.48"/></svg>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/nicoaryaa?igsh=YTFpZDFkd2luNmhn" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4zm9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8A1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5a5 5 0 0 1-5 5a5 5 0 0 1-5-5a5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3"/></svg>
+                </a>
+            </li>
+            <li>
+                <a href="www.linkedin.com/in/nico-arya-divano-89961228b" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zm-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93zM6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37z"/></svg>
+                </a>
+            </li>
+        </ul>
+        <hr class="my-5">
+        <p class="text-sm lg:text-base text-center">&copy; 2023 | Made by Nico Arya Divano</p>
+    </footer>
+    <script src="script.js"></script>
+    <!-- <script src="scripts/send-email.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script> -->
+</body>
+</html>
